@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Users\B7Reborn\source\repos\PutCommonInHere\GAME3111-Assignment1\x64\Debug\GAME3111-Assignment1.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles>
+    <ContentFile>
+      <FullPath>C:\Users\B7Reborn\source\repos\PutCommonInHere\GAME3111-Assignment1\x64\Debug\PS3.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\B7Reborn\source\repos\PutCommonInHere\GAME3111-Assignment1\x64\Debug\VS3.cso</FullPath>
+    </ContentFile>
+  </ContentFiles>
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

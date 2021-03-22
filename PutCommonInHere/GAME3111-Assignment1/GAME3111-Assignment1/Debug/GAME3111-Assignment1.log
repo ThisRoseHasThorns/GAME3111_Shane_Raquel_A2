@@ -1,0 +1,50 @@
+﻿  compilation object save succeeded; see C:\Users\B7Reborn\source\repos\GAME3111-Assignment1\Debug\PS3.cso
+  compilation object save succeeded; see C:\Users\B7Reborn\source\repos\GAME3111-Assignment1\Debug\VS3.cso
+  Camera.cpp
+  d3dApp.cpp
+C:\Users\B7Reborn\source\repos\Common\d3dApp.cpp(198): error C2102: '&' requires l-value
+C:\Users\B7Reborn\source\repos\Common\d3dApp.cpp(215): error C2102: '&' requires l-value
+  d3dUtil.cpp
+C:\Users\B7Reborn\source\repos\Common\d3dUtil.cpp(30,5): warning C4244: 'argument': conversion from 'std::streamoff' to 'SIZE_T', possible loss of data
+C:\Users\B7Reborn\source\repos\Common\d3dUtil.cpp(48): error C2102: '&' requires l-value
+C:\Users\B7Reborn\source\repos\Common\d3dUtil.cpp(58): error C2102: '&' requires l-value
+C:\Users\B7Reborn\source\repos\Common\d3dUtil.cpp(70,32): warning C4244: '=': conversion from 'UINT64' to 'LONG_PTR', possible loss of data
+C:\Users\B7Reborn\source\repos\Common\d3dUtil.cpp(76): error C2102: '&' requires l-value
+C:\Users\B7Reborn\source\repos\Common\d3dUtil.cpp(79): error C2102: '&' requires l-value
+  DDSTextureLoader.cpp
+C:\Users\B7Reborn\source\repos\Common\DDSTextureLoader.cpp(1273): error C2102: '&' requires l-value
+C:\Users\B7Reborn\source\repos\Common\DDSTextureLoader.cpp(1292): error C2102: '&' requires l-value
+C:\Users\B7Reborn\source\repos\Common\DDSTextureLoader.cpp(1294): error C2102: '&' requires l-value
+C:\Users\B7Reborn\source\repos\Common\DDSTextureLoader.cpp(1305): error C2102: '&' requires l-value
+C:\Users\B7Reborn\source\repos\Common\DDSTextureLoader.cpp(1311): error C2102: '&' requires l-value
+  GameTimer.cpp
+  GeometryGenerator.cpp
+  MathHelper.cpp
+  FrameResource.cpp
+C:\Users\B7Reborn\source\repos\Common\UploadBuffer.h(24): error C2102: '&' requires l-value
+C:\Users\B7Reborn\source\repos\Common\UploadBuffer.h(9): message : while compiling class template member function 'UploadBuffer<PassConstants>::UploadBuffer(ID3D12Device *,UINT,bool)'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\memory(2833): message : see reference to function template instantiation 'UploadBuffer<PassConstants>::UploadBuffer(ID3D12Device *,UINT,bool)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\memory(2536): message : see reference to class template instantiation 'UploadBuffer<PassConstants>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\memory(2535): message : while compiling class template member function 'void std::default_delete<UploadBuffer<PassConstants>>::operator ()(_Ty *) noexcept const'
+          with
+          [
+              _Ty=UploadBuffer<PassConstants>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\memory(2647): message : see reference to function template instantiation 'void std::default_delete<UploadBuffer<PassConstants>>::operator ()(_Ty *) noexcept const' being compiled
+          with
+          [
+              _Ty=UploadBuffer<PassConstants>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\memory(2574): message : see reference to class template instantiation 'std::default_delete<UploadBuffer<PassConstants>>' being compiled
+C:\Users\B7Reborn\source\repos\GAME3111-Assignment1\GAME3111-Assignment1\FrameResource.h(53): message : see reference to class template instantiation 'std::unique_ptr<UploadBuffer<PassConstants>,std::default_delete<UploadBuffer<PassConstants>>>' being compiled
+  Week4-1-ShapesAppUsingDescriptorTable.cpp
+C:\Users\B7Reborn\source\repos\GAME3111-Assignment1\GAME3111-Assignment1\Week4-1-ShapesAppUsingDescriptorTable.cpp(249): error C2102: '&' requires l-value
+C:\Users\B7Reborn\source\repos\GAME3111-Assignment1\GAME3111-Assignment1\Week4-1-ShapesAppUsingDescriptorTable.cpp(241): error C2102: '&' requires l-value
+C:\Users\B7Reborn\source\repos\GAME3111-Assignment1\GAME3111-Assignment1\Week4-1-ShapesAppUsingDescriptorTable.cpp(264): error C2102: '&' requires l-value
+C:\Users\B7Reborn\source\repos\GAME3111-Assignment1\GAME3111-Assignment1\Week4-1-ShapesAppUsingDescriptorTable.cpp(384): error C2102: '&' requires l-value
+C:\Users\B7Reborn\source\repos\GAME3111-Assignment1\GAME3111-Assignment1\Week4-1-ShapesAppUsingDescriptorTable.cpp(385): error C2102: '&' requires l-value
+C:\Users\B7Reborn\source\repos\GAME3111-Assignment1\GAME3111-Assignment1\Week4-1-ShapesAppUsingDescriptorTable.cpp(386): error C2102: '&' requires l-value
+C:\Users\B7Reborn\source\repos\GAME3111-Assignment1\GAME3111-Assignment1\Week4-1-ShapesAppUsingDescriptorTable.cpp(811): error C2102: '&' requires l-value
+C:\Users\B7Reborn\source\repos\GAME3111-Assignment1\GAME3111-Assignment1\Week4-1-ShapesAppUsingDescriptorTable.cpp(812): error C2102: '&' requires l-value
+  Week4-2-ShapeAppsUsingRootDescriptor.cpp
+  Generating Code...
