@@ -901,6 +901,8 @@ void ShapesApp::BuildRenderItems()
     leftWallRitem->BaseVertexLocation = leftWallRitem->Geo->DrawArgs["wall"].BaseVertexLocation;
     mAllRitems.push_back(std::move(leftWallRitem));
 
+   
+
     auto rightWallRitem = std::make_unique<RenderItem>();
     XMStoreFloat4x4(&rightWallRitem->World, XMMatrixScaling(3.0f, 19.5f, 30.0f) * XMMatrixTranslation(+15.0f, 8.0f, 0.0f));
     rightWallRitem->ObjCBIndex = 2;
@@ -1111,7 +1113,7 @@ void ShapesApp::BuildRenderItems()
     poewrGemRitem->BaseVertexLocation = poewrGemRitem->Geo->DrawArgs["diamond"].BaseVertexLocation;
     mAllRitems.push_back(std::move(poewrGemRitem));
 
-
+   
 
 	
 
@@ -1148,6 +1150,87 @@ void ShapesApp::BuildRenderItems()
         mAllRitems.push_back(std::move(rightMerlin));
 
     }
+
+    auto innerLeftWallRitem = std::make_unique<RenderItem>();
+    XMStoreFloat4x4(&innerLeftWallRitem->World, XMMatrixScaling(1.0f, 19.5f, 13.0f) * XMMatrixTranslation(-6.0f, 8.0f, 0.0f));
+    //XMStoreFloat4x4(&leftWallRitem->World, XMMatrixScaling(3.0f, 19.5f, 30.0f) * XMMatrixTranslation(-15.0f, 8.0f, 0.0f));
+    innerLeftWallRitem->ObjCBIndex = 24;
+    innerLeftWallRitem->Geo = mGeometries["shapeGeo"].get();
+    innerLeftWallRitem->PrimitiveType = D3D_PRIMITIVE_TOPOLOGY_TRIANGLELIST;
+    innerLeftWallRitem->IndexCount = innerLeftWallRitem->Geo->DrawArgs["wall"].IndexCount;
+    innerLeftWallRitem->StartIndexLocation = innerLeftWallRitem->Geo->DrawArgs["wall"].StartIndexLocation;
+    innerLeftWallRitem->BaseVertexLocation = innerLeftWallRitem->Geo->DrawArgs["wall"].BaseVertexLocation;
+    mAllRitems.push_back(std::move(innerLeftWallRitem));
+
+   auto innerrightWallRitem = std::make_unique<RenderItem>();
+    XMStoreFloat4x4(&innerrightWallRitem->World, XMMatrixScaling(1.0f, 19.5f, 13.0f) * XMMatrixTranslation(+6.0f, 8.0f, 0.0f));
+    innerrightWallRitem->ObjCBIndex = 25;
+    innerrightWallRitem->Geo = mGeometries["shapeGeo"].get();
+    innerrightWallRitem->PrimitiveType = D3D_PRIMITIVE_TOPOLOGY_TRIANGLELIST;
+    innerrightWallRitem->IndexCount = innerrightWallRitem->Geo->DrawArgs["wall"].IndexCount;
+    innerrightWallRitem->StartIndexLocation = innerrightWallRitem->Geo->DrawArgs["wall"].StartIndexLocation;
+    innerrightWallRitem->BaseVertexLocation = innerrightWallRitem->Geo->DrawArgs["wall"].BaseVertexLocation;
+    mAllRitems.push_back(std::move(innerrightWallRitem));
+
+    auto innerbackWallRitem = std::make_unique<RenderItem>();
+    XMStoreFloat4x4(&innerbackWallRitem->World, XMMatrixScaling(12.0f, 19.5f, 1.0f) * XMMatrixTranslation(0.0f, 8.0f, 6.0f));
+    innerbackWallRitem->ObjCBIndex = 26;
+    innerbackWallRitem->Geo = mGeometries["shapeGeo"].get();
+    innerbackWallRitem->PrimitiveType = D3D_PRIMITIVE_TOPOLOGY_TRIANGLELIST;
+    innerbackWallRitem->IndexCount = innerbackWallRitem->Geo->DrawArgs["wall"].IndexCount;
+    innerbackWallRitem->StartIndexLocation = innerbackWallRitem->Geo->DrawArgs["wall"].StartIndexLocation;
+    innerbackWallRitem->BaseVertexLocation = innerbackWallRitem->Geo->DrawArgs["wall"].BaseVertexLocation;
+    mAllRitems.push_back(std::move(innerbackWallRitem));
+
+    auto innergateLeftRitem = std::make_unique<RenderItem>();
+    XMStoreFloat4x4(&innergateLeftRitem->World, XMMatrixScaling(4.0f, 19.5f, 1.0f) * XMMatrixTranslation(-4.0f, 8.0f, -6.0f));
+    innergateLeftRitem->ObjCBIndex = 27;
+    innergateLeftRitem->Geo = mGeometries["shapeGeo"].get();
+    innergateLeftRitem->PrimitiveType = D3D_PRIMITIVE_TOPOLOGY_TRIANGLELIST;
+    innergateLeftRitem->IndexCount = innergateLeftRitem->Geo->DrawArgs["wall"].IndexCount;
+    innergateLeftRitem->StartIndexLocation = innergateLeftRitem->Geo->DrawArgs["wall"].StartIndexLocation;
+    innergateLeftRitem->BaseVertexLocation = innergateLeftRitem->Geo->DrawArgs["wall"].BaseVertexLocation;
+    mAllRitems.push_back(std::move(innergateLeftRitem));
+
+    auto innergateRightRitem = std::make_unique<RenderItem>();
+    XMStoreFloat4x4(&innergateRightRitem->World, XMMatrixScaling(4.0f, 19.5f, 1.0f) * XMMatrixTranslation(4.0f, 8.0f, -6.0f));
+    innergateRightRitem->ObjCBIndex = 28;
+    innergateRightRitem->Geo = mGeometries["shapeGeo"].get();
+    innergateRightRitem->PrimitiveType = D3D_PRIMITIVE_TOPOLOGY_TRIANGLELIST;
+    innergateRightRitem->IndexCount = innergateRightRitem->Geo->DrawArgs["wall"].IndexCount;
+    innergateRightRitem->StartIndexLocation = innergateRightRitem->Geo->DrawArgs["wall"].StartIndexLocation;
+    innergateRightRitem->BaseVertexLocation = innergateRightRitem->Geo->DrawArgs["wall"].BaseVertexLocation;
+    mAllRitems.push_back(std::move(innergateRightRitem));
+
+    auto topLeftPlatformitem = std::make_unique<RenderItem>();
+    XMStoreFloat4x4(&topLeftPlatformitem->World, XMMatrixScaling(9.0f, 1.0f, 6.0f) * XMMatrixTranslation(-10.0f, 18.0f, 0.0f));
+    topLeftPlatformitem->ObjCBIndex = 29;
+    topLeftPlatformitem->Geo = mGeometries["shapeGeo"].get();
+    topLeftPlatformitem->PrimitiveType = D3D_PRIMITIVE_TOPOLOGY_TRIANGLELIST;
+    topLeftPlatformitem->IndexCount = topLeftPlatformitem->Geo->DrawArgs["wall"].IndexCount;
+    topLeftPlatformitem->StartIndexLocation = topLeftPlatformitem->Geo->DrawArgs["wall"].StartIndexLocation;
+    topLeftPlatformitem->BaseVertexLocation = topLeftPlatformitem->Geo->DrawArgs["wall"].BaseVertexLocation;
+    mAllRitems.push_back(std::move(topLeftPlatformitem));
+
+    auto topRightPlatformitem = std::make_unique<RenderItem>();
+    XMStoreFloat4x4(&topRightPlatformitem->World, XMMatrixScaling(9.0f, 1.0f, 6.0f) * XMMatrixTranslation(9.0f, 18.0f, 0.0f));
+    topRightPlatformitem->ObjCBIndex = 30;
+    topRightPlatformitem->Geo = mGeometries["shapeGeo"].get();
+    topRightPlatformitem->PrimitiveType = D3D_PRIMITIVE_TOPOLOGY_TRIANGLELIST;
+    topRightPlatformitem->IndexCount = topRightPlatformitem->Geo->DrawArgs["wall"].IndexCount;
+    topRightPlatformitem->StartIndexLocation = topRightPlatformitem->Geo->DrawArgs["wall"].StartIndexLocation;
+    topRightPlatformitem->BaseVertexLocation = topRightPlatformitem->Geo->DrawArgs["wall"].BaseVertexLocation;
+    mAllRitems.push_back(std::move(topRightPlatformitem));
+
+    auto topBackPlatformitem = std::make_unique<RenderItem>();
+    XMStoreFloat4x4(&topBackPlatformitem->World, XMMatrixScaling(6.0f, 1.0f, 9.0f)* XMMatrixTranslation(0.0f, 18.0f, 10.0f));
+    topBackPlatformitem->ObjCBIndex = 31;
+    topBackPlatformitem->Geo = mGeometries["shapeGeo"].get();
+    topBackPlatformitem->PrimitiveType = D3D_PRIMITIVE_TOPOLOGY_TRIANGLELIST;
+    topBackPlatformitem->IndexCount = topBackPlatformitem->Geo->DrawArgs["wall"].IndexCount;
+    topBackPlatformitem->StartIndexLocation = topBackPlatformitem->Geo->DrawArgs["wall"].StartIndexLocation;
+    topBackPlatformitem->BaseVertexLocation = topBackPlatformitem->Geo->DrawArgs["wall"].BaseVertexLocation;
+    mAllRitems.push_back(std::move(topBackPlatformitem));
 
 	// All the render items are opaque.
 	for(auto& e : mAllRitems)
